@@ -4,29 +4,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>American Discount Cards | Nationwide Fundraising Solutions</title>
+    <title>American Discount Cards | Nationwide Fundraising Experts</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="High-profit community discount cards for schools, sports, and nonprofits. 30mil PVC quality, custom designs, and zero upfront cost. Raise more today!" />
+    <meta name="keywords" content="fundraising, discount cards, school fundraiser, sports fundraising, community cards, 30mil PVC cards" />
+    
+    <!-- OpenGraph / Social Media -->
+    <meta property="og:title" content="American Discount Cards | Professional Fundraising" />
+    <meta property="og:description" content="Raise up to 70% profit with custom-designed community discount cards. Nationwide support with zero risk." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589758438368-0ad531db3366?auto=format&fit=crop&q=80&w=1200" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><path d=%22M30 35h40v30H30z%22 fill=%22none%22 stroke=%22white%22 stroke-width=%225%22/><path d=%22M30 45h40M30 55h20%22 stroke=%22white%22 stroke-width=%223%22/></svg>">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
       body {
         font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
       }
-      .gradient-bg {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      .animate-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
       }
     </style>
-  <script type="importmap">
+    
+    <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
 </script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    <!-- Entry Point -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

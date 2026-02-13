@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, CheckCircle2, Star, ShieldCheck, LayoutGrid, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Star } from 'lucide-react';
 import { FEATURES, PROJECTS } from '../constants';
 
 interface HomeProps {
@@ -47,20 +47,50 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             <div className="lg:w-1/2 mt-16 lg:mt-0 relative">
               <div className="relative z-10 grid grid-cols-2 gap-4">
                 <div className="space-y-4 pt-12">
+                   {/* Athletic Schedule Sample */}
                    <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 -rotate-3 hover:rotate-0 transition-transform duration-500">
-                      <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&q=80&w=400" className="rounded-xl w-full h-48 object-cover" alt="Sports Sample" />
-                      <div className="mt-3 text-xs font-bold text-slate-400 uppercase tracking-tighter">Athletic Schedule Card</div>
+                      <div className="aspect-[1.58/1] bg-slate-900 rounded-lg overflow-hidden relative p-4 flex flex-col justify-between">
+                         <div className="flex justify-between items-start">
+                            <div className="text-[6px] text-white font-bold opacity-75">VARSITY SCHEDULE 2024</div>
+                            <div className="text-[10px] text-blue-400 font-black">$20</div>
+                         </div>
+                         <div className="text-[12px] text-white font-black leading-none">RIDGE FOOTBALL</div>
+                         <div className="mt-2 space-y-1 opacity-50">
+                            <div className="h-0.5 w-full bg-white"></div>
+                            <div className="h-0.5 w-3/4 bg-white"></div>
+                            <div className="h-0.5 w-full bg-white"></div>
+                         </div>
+                      </div>
+                      <div className="mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Athletic Schedule Card</div>
                    </div>
+                   {/* Scholarship/Benefit Sample */}
                    <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 rotate-2 hover:rotate-0 transition-transform duration-500">
-                      <img src="https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=400" className="rounded-xl w-full h-48 object-cover" alt="Scholarship Sample" />
-                      <div className="mt-3 text-xs font-bold text-slate-400 uppercase tracking-tighter">Scholarship Program</div>
+                      <div className="aspect-[1.58/1] bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg overflow-hidden relative p-4 flex flex-col justify-between">
+                         <div className="text-[6px] text-blue-100 font-bold tracking-widest uppercase">Scholarship Program</div>
+                         <div className="space-y-1">
+                            <div className="text-[12px] text-white font-black">STUDENT SUCCESS</div>
+                            <div className="h-4 w-4 bg-white rounded-sm flex items-center justify-center"><div className="w-2 h-2 bg-blue-900"></div></div>
+                         </div>
+                      </div>
+                      <div className="mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Scholarship Program</div>
                    </div>
                 </div>
                 <div className="space-y-4">
+                  {/* Community Grid Sample (Fixed URL/Placeholder) */}
                   <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 rotate-6 hover:rotate-0 transition-transform duration-500">
-                      <img src="https://images.unsplash.com/photo-1526367790999-0150786486a9?auto=format&fit=crop&q=80&w=400" className="rounded-xl w-full h-48 object-cover" alt="Community Sample" />
-                      <div className="mt-3 text-xs font-bold text-slate-400 uppercase tracking-tighter">Community Savings</div>
+                      <div className="aspect-[1.58/1] bg-white rounded-lg overflow-hidden border border-slate-200 relative p-2">
+                        <div className="grid grid-cols-3 grid-rows-3 gap-1 h-full">
+                          {[...Array(9)].map((_, i) => (
+                            <div key={i} className="border border-slate-100 rounded-sm bg-slate-50 flex flex-col items-center justify-center">
+                              <div className="w-1.5 h-1.5 bg-slate-300 rounded-full mb-0.5"></div>
+                              <div className="h-1 w-3 bg-slate-200"></div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Community Savings Grid</div>
                    </div>
+                   {/* Profit Margin Tile */}
                    <div className="bg-slate-900 p-6 rounded-2xl shadow-2xl text-white flex flex-col justify-center items-center text-center">
                       <div className="text-4xl font-black text-blue-400">70%</div>
                       <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Profit Margin</div>

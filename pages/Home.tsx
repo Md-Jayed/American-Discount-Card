@@ -49,44 +49,39 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 <div className="space-y-4 pt-12">
                    {/* Athletic Schedule Sample */}
                    <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 -rotate-3 hover:rotate-0 transition-transform duration-500">
-                      <div className="aspect-[1.58/1] bg-slate-900 rounded-lg overflow-hidden relative p-4 flex flex-col justify-between">
-                         <div className="flex justify-between items-start">
-                            <div className="text-[6px] text-white font-bold opacity-75">VARSITY SCHEDULE 2024</div>
-                            <div className="text-[10px] text-blue-400 font-black">$20</div>
-                         </div>
-                         <div className="text-[12px] text-white font-black leading-none">RIDGE FOOTBALL</div>
-                         <div className="mt-2 space-y-1 opacity-50">
-                            <div className="h-0.5 w-full bg-white"></div>
-                            <div className="h-0.5 w-3/4 bg-white"></div>
-                            <div className="h-0.5 w-full bg-white"></div>
-                         </div>
+                      <div className="aspect-[1.58/1] bg-slate-900 rounded-lg overflow-hidden relative">
+                         <img 
+                           src="https://iili.io/qKYH7Rt.md.png" 
+                           alt="Cougar Football Card" 
+                           className="w-full h-full object-cover"
+                           referrerPolicy="no-referrer"
+                         />
                       </div>
                       <div className="mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Athletic Schedule Card</div>
                    </div>
                    {/* Scholarship/Benefit Sample */}
                    <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 rotate-2 hover:rotate-0 transition-transform duration-500">
-                      <div className="aspect-[1.58/1] bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg overflow-hidden relative p-4 flex flex-col justify-between">
-                         <div className="text-[6px] text-blue-100 font-bold tracking-widest uppercase">Scholarship Program</div>
-                         <div className="space-y-1">
-                            <div className="text-[12px] text-white font-black">STUDENT SUCCESS</div>
-                            <div className="h-4 w-4 bg-white rounded-sm flex items-center justify-center"><div className="w-2 h-2 bg-blue-900"></div></div>
-                         </div>
+                      <div className="aspect-[1.58/1] bg-blue-900 rounded-lg overflow-hidden relative">
+                         <img 
+                           src="https://iili.io/qKY3OvV.md.png" 
+                           alt="Scholarship Card" 
+                           className="w-full h-full object-cover"
+                           referrerPolicy="no-referrer"
+                         />
                       </div>
                       <div className="mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Scholarship Program</div>
                    </div>
                 </div>
                 <div className="space-y-4">
-                  {/* Community Grid Sample (Fixed URL/Placeholder) */}
-                  <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 rotate-6 hover:rotate-0 transition-transform duration-500">
-                      <div className="aspect-[1.58/1] bg-white rounded-lg overflow-hidden border border-slate-200 relative p-2">
-                        <div className="grid grid-cols-3 grid-rows-3 gap-1 h-full">
-                          {[...Array(9)].map((_, i) => (
-                            <div key={i} className="border border-slate-100 rounded-sm bg-slate-50 flex flex-col items-center justify-center">
-                              <div className="w-1.5 h-1.5 bg-slate-300 rounded-full mb-0.5"></div>
-                              <div className="h-1 w-3 bg-slate-200"></div>
-                            </div>
-                          ))}
-                        </div>
+                   {/* Community Grid Sample */}
+                   <div className="bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 rotate-6 hover:rotate-0 transition-transform duration-500">
+                      <div className="aspect-[1.58/1] bg-white rounded-lg overflow-hidden border border-slate-200 relative">
+                         <img 
+                           src="https://iili.io/qKY3eyB.md.png" 
+                           alt="Community Savings Card" 
+                           className="w-full h-full object-cover"
+                           referrerPolicy="no-referrer"
+                         />
                       </div>
                       <div className="mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Community Savings Grid</div>
                    </div>
@@ -116,26 +111,25 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {PROJECTS.map((project, i) => (
+            {PROJECTS.map((project: any, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="bg-slate-100 rounded-3xl p-8 mb-6 transition-all group-hover:bg-blue-50">
                   <div className="aspect-[1.58/1] bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/5"></div>
-                    <div className="p-6 h-full flex flex-col justify-between">
-                      <div className="flex justify-between items-start">
-                        <div className="bg-blue-600 text-white px-3 py-1 rounded text-[10px] font-black uppercase tracking-widest">{project.value}</div>
-                        <div className="text-[8px] font-bold text-slate-400">EXP 12/31/2026</div>
-                      </div>
-                      <div className="space-y-1">
-                        <div className="text-lg font-black text-slate-900 uppercase leading-none">{project.name}</div>
-                        <div className="text-[10px] font-bold text-blue-600 uppercase tracking-widest">{project.category}</div>
-                      </div>
+                    <img 
+                      src={project.image} 
+                      alt={project.name} 
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div className="absolute top-4 left-4">
+                      <div className="bg-blue-600 text-white px-3 py-1 rounded text-[10px] font-black uppercase tracking-widest">{project.value}</div>
                     </div>
                   </div>
                 </div>
                 <h4 className="text-lg font-bold text-slate-900">{project.name}</h4>
                 <ul className="mt-2 space-y-1">
-                  {project.features.map((f, j) => (
+                  {project.features.map((f: string, j: number) => (
                     <li key={j} className="text-sm text-slate-500 flex items-center gap-2">
                       <div className="w-1 h-1 bg-blue-600 rounded-full"></div> {f}
                     </li>
@@ -181,7 +175,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             {FEATURES.map((feature, i) => (
               <div key={i} className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:bg-slate-800/50 transition-all">
                 <div className="mb-6 bg-blue-600/20 p-3 rounded-xl inline-block">
-                  {React.cloneElement(feature.icon as React.ReactElement, { className: 'w-6 h-6 text-blue-400' })}
+                  <feature.icon className="w-6 h-6 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">{feature.description}</p>

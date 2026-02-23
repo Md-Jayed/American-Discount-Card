@@ -64,30 +64,15 @@ const Advertisers: React.FC<AdvertisersProps> = ({ onNavigate }) => {
               </ul>
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-white p-6 rounded-2xl shadow-2xl rotate-2">
-                <div className="text-center mb-6">
-                  <div className="text-[10px] font-black text-slate-400 tracking-widest uppercase">Sample Offer Grid</div>
-                </div>
-                <div className="grid grid-cols-3 gap-2">
-                  {[
-                    {name: "Denny's", off: "10% OFF"},
-                    {name: "Sonic", off: "FREE CHIPS"},
-                    {name: "Arby's", off: "BOGO FREE"},
-                    {name: "Wendy's", off: "$2 OFF"},
-                    {name: "Pizza Hut", off: "FREE TOPPING"},
-                    {name: "Burger King", off: "WHOPPER JR"},
-                    {name: "Jiffy Lube", off: "$5 OFF OIL"},
-                    {name: "Subway", off: "FREE COOKIE"},
-                    {name: "Local BBQ", off: "15% OFF"}
-                  ].map((m, i) => (
-                    <div key={i} className="border border-slate-100 p-2 rounded flex flex-col items-center justify-center text-center">
-                      <div className="text-[8px] font-bold text-slate-400 uppercase leading-none mb-1">{m.name}</div>
-                      <div className="text-[10px] font-black text-slate-900 leading-none">{m.off}</div>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-6 pt-4 border-t text-center">
-                   <div className="inline-block bg-slate-100 px-3 py-1 rounded text-[8px] font-bold text-slate-500 tracking-widest uppercase">Laminated 30mil PVC Grid</div>
+              <div className="bg-white p-4 rounded-2xl shadow-2xl rotate-2 border border-slate-100">
+                <img 
+                  src="https://i.postimg.cc/Pfb44NcB/ESC-500pcs-(1).jpg" 
+                  alt="Merchant Grid Sample" 
+                  className="w-full h-auto rounded-xl"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="mt-4 text-center">
+                   <div className="inline-block bg-slate-100 px-3 py-1 rounded text-[8px] font-bold text-slate-500 tracking-widest uppercase">Laminated 30mil PVC Merchant Grid</div>
                 </div>
               </div>
             </div>

@@ -95,25 +95,16 @@ const Fundraising: React.FC<FundraisingProps> = ({ onNavigate }) => {
               </div>
             </div>
             <div className="lg:w-1/2">
-               <div className="relative p-8 bg-slate-900 rounded-[2rem] overflow-hidden shadow-2xl">
-                 <div className="absolute top-0 right-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-400 to-transparent"></div>
-                 <div className="relative z-10 bg-white rounded-xl p-8 shadow-inner">
-                    <div className="flex justify-between items-center mb-6">
-                       <div className="text-2xl font-black text-slate-900">RIDGE FOOTBALL</div>
-                       <div className="text-blue-600 font-bold">$10</div>
-                    </div>
-                    <div className="grid grid-cols-4 gap-2 text-[8px] font-bold text-slate-400 border-b pb-2 mb-2">
-                       <div>DATE</div><div>OPPONENT</div><div>LOC</div><div>TIME</div>
-                    </div>
-                    <div className="space-y-2 opacity-50">
-                       <div className="grid grid-cols-4 gap-2 text-[10px]"><div>8/31</div><div>Monroe</div><div>Away</div><div>7:00</div></div>
-                       <div className="grid grid-cols-4 gap-2 text-[10px]"><div>9/08</div><div>Phillipsburg</div><div>Away</div><div>7:00</div></div>
-                       <div className="grid grid-cols-4 gap-2 text-[10px]"><div>9/14</div><div>Hillsborough</div><div>Home</div><div>7:00</div></div>
-                    </div>
-                    <div className="mt-6 pt-6 border-t text-center italic text-xs font-semibold text-slate-500">
-                       "PREMIER SPONSOR PLACEMENT HERE"
-                    </div>
-                 </div>
+               <div className="relative p-4 bg-slate-100 rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200">
+                  <img 
+                    src="https://i.postimg.cc/MZ0DDXN8/COUGAR-1500pcs.jpg" 
+                    alt="Cougar Football Card Sample" 
+                    className="w-full h-auto rounded-2xl shadow-lg"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="mt-4 text-center">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Front: Athletic Schedule Integration</span>
+                  </div>
                </div>
             </div>
           </div>

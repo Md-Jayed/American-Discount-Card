@@ -22,21 +22,24 @@ export const TECH_SPECS = {
 
 export const PROJECTS = [
   {
-    name: "Ridge Red Devils Football",
+    name: "Cougar Football",
     category: "Athletic Schedule Card",
-    value: "$10 Donation",
-    features: ["Full Season Schedule", "Premier Sponsor Placement", "$10 Off Food Offer"]
+    value: "$20 Donation",
+    image: "https://iili.io/qKYH7Rt.md.png",
+    features: ["Full Season Schedule", "Premier Sponsor Placement", "30mil PVC Quality"]
   },
   {
-    name: "Student Scholarship Program",
+    name: "Student Scholarship",
     category: "Benefit Card",
     value: "$25 Card",
+    image: "https://iili.io/qKY3OvV.md.png",
     features: ["QR Code Re-purchase", "Barcode Tracking", "Nationwide Merchant Grid"]
   },
   {
-    name: "Crisp County Baseball",
+    name: "ESC Community Savings",
     category: "Community Card",
-    value: "$10 Card",
+    value: "$15 Card",
+    image: "https://iili.io/qKY3eyB.md.png",
     features: ["25+ Local Merchants", "Laminated Finish", "High-Visibility Logo"]
   }
 ];
@@ -45,22 +48,22 @@ export const FEATURES = [
   {
     title: "Zero Upfront Cost",
     description: "Start your fundraiser without spending a dime. We provide the cards, and you only pay after the campaign ends.",
-    icon: <Zap className="w-6 h-6 text-blue-600" />
+    icon: Zap
   },
   {
     title: "High Profit Margins",
     description: "Keep up to 50-70% of every card sold. Our cards are priced to sell fast while maximizing your bottom line.",
-    icon: <TrendingUp className="w-6 h-6 text-blue-600" />
+    icon: TrendingUp
   },
   {
     title: "Nationwide Support",
     description: "Operating in all 50 states. We handle the merchant recruitment and card design for your local area.",
-    icon: <Globe className="w-6 h-6 text-blue-600" />
+    icon: Globe
   },
   {
     title: "Custom Merchant Mix",
     description: "Every card is customized with local businesses your supporters actually visit daily.",
-    icon: <Users className="w-6 h-6 text-blue-600" />
+    icon: Users
   }
 ];
 
